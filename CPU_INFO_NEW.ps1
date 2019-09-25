@@ -1,12 +1,12 @@
 ﻿##################################
 #                                #
-# Written by Carlos Vieyra - DCR #
+# Written by Carlos V #
 #                                #
 ##################################
 
 ###            NOTES            ###
 ###
-### RUN WITH ELEVATED PRIV/XA ###
+### RUN WITH ELEVATED PRIV ###
 ###
 ### HostNames.csv must be in the same directory as the script ###
 ###

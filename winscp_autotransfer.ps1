@@ -1,3 +1,10 @@
+#### Generate a Secure String Key ####
+#
+# "CLEARTEXTPASS123" | ConvertTo-SecureString -AsPlainText -Force | ConvertFrom-SecureString | Out-File ".\key.txt"
+# DELETE C:\Users\user\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadLine\ConsoleHost_history # IF RUNNING CLEARTEXT THROUGH PoSH
+#
+
+
 try
 {
  
@@ -10,7 +17,7 @@ try
     $sessionOptions.Protocol = [WinSCP.Protocol]::Sftp
     $sessionOptions.HostName = "10.XX.XX.XX"
     $sessionOptions.UserName = "srvXXXXXXXX"
-    $sessionOptions.SecurePassword = ConvertTo-SecureString"273737737373"
+    $sessionOptions.SecurePassword = ConvertTo-SecureString "273737737373"
     $sessionOptions.SshHostKeyFingerprint = "ssh-rsa 2048 XXXXXXXXXXXXXX"
     $session = New-Object WinSCP.Session
 
